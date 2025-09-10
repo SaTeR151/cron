@@ -6,6 +6,7 @@
 go get github.com/SaTeR151/cron
 ```
 
+## Пример работы
 ```go
 import (
 	"context"
