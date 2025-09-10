@@ -10,6 +10,13 @@ import (
 // RegisterJobs принимает slice cron.Job работ
 //
 //	type Job struct{
+//		Config JobConfig
+//
+//		Fn func (context.Context) error
+//
+// }
+//
+//	type JobConfig struct{
 //		Spec []string - Время когда вызывать фунцкии -  "*/1 * * * * *" - sec, min, hour, day, month, day (week)
 //
 //		RunOnStart bool - запуск при инициализации
