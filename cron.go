@@ -11,18 +11,13 @@ import (
 //
 //	type Job struct{
 //		Config JobConfig
-//
 //		Fn func (context.Context) error
-//
-// }
+//	}
 //
 //	type JobConfig struct{
 //		Spec []string - Время когда вызывать фунцкии -  "*/1 * * * * *" - sec, min, hour, day, month, day (week)
-//
 //		RunOnStart bool - запуск при инициализации
-//
 //		Allowed - Включение/отключение крона
-//
 //	}
 func (c *Cron) RegisterJobs(jobs ...Job) {
 	c.jobs = append(c.jobs, jobs...)
