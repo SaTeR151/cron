@@ -13,6 +13,11 @@ func (c *Cron) SetErrProc(errProc *errproc.ErrProc) error {
 	return err
 }
 
+// SetBaseErrProc устанавливает errProc в cron
+func (c *Cron) SetBaseErrProc(errProc *errproc.BaseErrProc) {
+	c.errProc = errProc
+}
+
 // SetLogger устанавливает logger в cron
 func (c *Cron) SetLogger(logger *slog.Logger) {
 	c.logger = logger
